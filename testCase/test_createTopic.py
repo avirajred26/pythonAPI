@@ -17,9 +17,9 @@ class Test_CreateTopic_002:
 
         self.logger.info("*************** "+self.__class__.__name__+" *****************")
         self.driver = setup
-        self.logger.info("*************** Browser is opneing *****************")
+        self.logger.info("*************** Browser is opening *****************")
         self.driver.maximize_window()
-        self.driver.get(self.baseURL)
+        self.driver.get(self.baseURL+"/login/")
         self.lp = LoginPage(self.driver)
         self.lp.login(self.username, self.password)
 
